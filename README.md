@@ -31,16 +31,19 @@
 git clone <адрес репозитория> Paper3D
 cd Paper3D
 
-python3 -m venv venv
-source venv/bin/activate          # Windows: venv\Scripts\activate
+# окружение — вне папки репозитория
+python3 -m venv ~/.venvs/paper3d
+source ~/.venvs/paper3d/bin/activate      # Windows: %USERPROFILE%\.venvs\paper3d\Scripts\activate
 
 pip install -r requirements.txt
 ```
 
+Окружение можно создать и в другом месте — главное, не внутри папки проекта.
+
 ## Запуск
 
 ```bash
-source venv/bin/activate
+source ~/.venvs/paper3d/bin/activate
 streamlit run app.py
 ```
 
@@ -69,7 +72,7 @@ streamlit run app.py
 ## Тесты
 
 ```bash
-source venv/bin/activate
+source ~/.venvs/paper3d/bin/activate
 pytest -q
 ```
 
