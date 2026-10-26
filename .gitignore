@@ -1,0 +1,27 @@
+# виртуальное окружение
+venv/
+.venv/
+env/
+
+# кеш Python и тестов
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# результаты и загрузки приложения
+output/
+uploads/
+*.obj
+*.mtl
+*.zip
+paper3d_params.json
+
+# настройки и секреты Streamlit
+.streamlit/secrets.toml
+
+# редакторы и ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

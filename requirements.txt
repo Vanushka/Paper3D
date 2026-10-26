@@ -1,0 +1,7 @@
+streamlit>=1.65
+numpy
+scipy
+opencv-python
+trimesh
+manifold3d
+pytest
